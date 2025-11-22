@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Wallet</title>
+</head>
+<body>
+
+</body>
+<script type="module">
+    import {ethers} from "./js/ethers.min.js";
+
+    window.addEventListener("DOMContentLoaded", async () => {
+        if (typeof window.ethereum !== "undefined") {
+            console.log("✅ MetaMask 已安装");
+
+            const provider = new ethers.BrowserProvider(window.ethereum);
+
+            const signer = await provider.getSigner()
+            const address = await signer.getAddress()
+
+            console.log('我的地址1 ' + address.toString())
+        } else {
+            console.log("❌ 没检测到 MetaMask");
+        }
+    });
+</script>
+</html>

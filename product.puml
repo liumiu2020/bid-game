@@ -1,0 +1,9 @@
+@startuml product
+
+participant user
+participant platform
+participant contract
+
+user->platform: register wallet
+
+@enduml

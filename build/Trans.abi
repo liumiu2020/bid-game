@@ -1,0 +1,1 @@
+[{"inputs":[{"components":[{"internalType":"address","name":"addr","type":"address"},{"internalType":"string","name":"name","type":"string"},{"internalType":"enum Calculate.Category","name":"category","type":"uint8"}],"internalType":"struct Calculate.User","name":"winner_1","type":"tuple"}],"name":"setWinner","outputs":[],"stateMutability":"payable","type":"function"}]
